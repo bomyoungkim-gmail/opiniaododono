@@ -6,18 +6,19 @@ const steps = [
     icon: ClipboardList,
     title: "Você define as etapas",
     description:
-      "Combine marcos simples (ex.: demolição, hidráulica, pintura) e valores por etapa.",
+      "Combine marcos simples do projeto ou serviço e defina os valores por etapa.",
   },
   {
     icon: Camera,
     title: "O profissional envia evidências",
-    description: "Fotos do antes/depois e nota/comprovantes quando necessário.",
+    description:
+      "Fotos do antes/depois, relatórios e notas/comprovantes quando necessário.",
   },
   {
     icon: CheckCircle2,
     title: "Você aprova e libera",
     description:
-      "A reforma avança com previsibilidade e registro do que foi entregue.",
+      "O projeto avança com previsibilidade e registro claro do que foi entregue.",
   },
 ];
 

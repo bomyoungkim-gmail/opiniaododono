@@ -1,4 +1,9 @@
-export type TipoImovel = "Apto" | "Casa";
+export type TipoProjeto =
+  | "Software"
+  | "Design"
+  | "Reforma"
+  | "Consultoria"
+  | "Outros";
 
 export type EtapaAtual =
   | "Planejando"
@@ -19,7 +24,7 @@ export interface LeadPayload {
   nome: string;
   whatsapp: string;
   cidadeUF: string;
-  tipoImovel: TipoImovel;
+  tipoProjeto: TipoProjeto;
   etapaAtual: EtapaAtual;
   faixaOrcamento: FaixaOrcamento;
   principalDor: PrincipalDor;

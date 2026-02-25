@@ -27,7 +27,7 @@ export function Header() {
             className="h-5 w-5 text-brand-cobalt"
             aria-hidden="true"
           />
-          <span className="font-semibold">Milestone</span>
+          <span className="font-semibold">Opinião do Dono</span>
         </Link>
 
         <nav

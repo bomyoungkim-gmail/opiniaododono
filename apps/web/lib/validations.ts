@@ -9,7 +9,13 @@ export const leadSchema = z.object({
     .min(8, "Informe um WhatsApp válido.")
     .regex(WHATSAPP_REGEX, "Ex: (11) 99999-9999"),
   cidadeUF: z.string().min(3, "Informe cidade e UF. Ex: São Paulo/SP"),
-  tipoImovel: z.enum(["Apto", "Casa"]),
+  tipoProjeto: z.enum([
+    "Software",
+    "Design",
+    "Reforma",
+    "Consultoria",
+    "Outros",
+  ]),
   etapaAtual: z.enum([
     "Planejando",
     "Já começou",

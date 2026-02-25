@@ -11,7 +11,7 @@ const guarantees = [
     icon: MessageCircleMore,
     title: "Suporte humanizado via WhatsApp",
     description:
-      "Sem robô enrolando: atendimento direto para dúvidas da sua obra.",
+      "Sem robô enrolando: atendimento direto para dúvidas do seu projeto.",
   },
   {
     icon: FileClock,
@@ -29,7 +29,7 @@ export function PilotGuarantees() {
           Garantias do Piloto
         </h2>
         <p className="mt-3 max-w-2xl text-slate-600">
-          Feito para a realidade de reforma residencial no Brasil: simples,
+          Feito para a realidade de prestação de serviços no Brasil: simples,
           objetivo e útil.
         </p>
 

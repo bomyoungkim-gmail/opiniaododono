@@ -6,13 +6,16 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
 export const metadata: Metadata = {
-  title: "Milestone — Pague sua reforma por etapas com segurança",
+  metadataBase: new URL(
+    process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000",
+  ),
+  title: "Opinião do Dono — Pague por serviços e projetos com segurança",
   description:
-    "Acompanhe entregas, guarde evidências e aprove cada etapa antes de liberar o pagamento.",
+    "Assegure o pagamento de valor justo. Acompanhe entregas, guarde evidências e aprove cada etapa antes de liberar o dinheiro.",
   openGraph: {
-    title: "Milestone — Pague sua reforma por etapas com segurança",
+    title: "Opinião do Dono — Pague por serviços e projetos com segurança",
     description:
-      "Acompanhe entregas, guarde evidências e aprove cada etapa antes de liberar o pagamento.",
+      "Assegure o pagamento de valor justo. Acompanhe entregas, guarde evidências e aprove cada etapa antes de liberar o dinheiro.",
     images: ["/og-image.svg"],
     locale: "pt_BR",
     type: "website",

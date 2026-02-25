@@ -8,7 +8,7 @@ import {
 const faqItems = [
   {
     q: "Isso é um banco?",
-    a: "Não. É uma plataforma para organizar etapas, evidências e aprovações de pagamento na sua reforma.",
+    a: "Não. É uma plataforma para organizar etapas, evidências e aprovações de pagamento no seu projeto ou serviço.",
   },
   {
     q: "Como o pagamento por etapas funciona?",
@@ -27,8 +27,8 @@ const faqItems = [
     a: "Depende do acordo e do tipo de serviço. A plataforma permite anexar nota/comprovantes quando fizer sentido.",
   },
   {
-    q: "Serve para qualquer tipo de reforma?",
-    a: "Sim — pintura, elétrica, hidráulica, gesso, marcenaria, obra completa. Você monta as etapas do seu jeito.",
+    q: "Serve para qualquer tipo de serviço?",
+    a: "Sim — desenvolvimento de software, design, consultoria, reformas, obras. Você monta as etapas do seu jeito.",
   },
   {
     q: "Quanto custa?",

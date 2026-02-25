@@ -9,12 +9,12 @@ export function Hero() {
       <div className="container grid items-center gap-10 lg:grid-cols-2">
         <div>
           <h1 className="text-3xl font-semibold leading-tight text-brand-navy md:text-5xl">
-            Pague sua reforma por etapas — com mais segurança e menos dor de
-            cabeça.
+            Pague por serviços e projetos com segurança — garanta o valor justo.
           </h1>
           <p className="mt-5 max-w-xl text-lg text-slate-600">
-            Acompanhe entregas, guarde evidências (nota e fotos) e aprove cada
-            etapa antes de liberar o pagamento. Tudo simples, no seu celular.
+            Acompanhe entregas, guarde evidências (notas e fotos) e aprove cada
+            etapa antes de liberar o pagamento. Proteja seu dinheiro e evite
+            dores de cabeça.
           </p>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
             <TrackableButton
@@ -47,7 +47,7 @@ export function Hero() {
             <div className="h-10 w-36 rounded-xl bg-brand-emerald/20" />
           </div>
           <p className="mt-4 text-sm text-slate-500">
-            Visualização de etapas e comprovação da obra.
+            Visualização de etapas e comprovação do projeto.
           </p>
         </div>
       </div>

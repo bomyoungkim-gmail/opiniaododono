@@ -13,9 +13,12 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Select } from "@/components/ui/select";
 
-const tipoImovelOptions = [
-  { label: "Apto", value: "Apto" },
-  { label: "Casa", value: "Casa" },
+const tipoProjetoOptions = [
+  { label: "Software", value: "Software" },
+  { label: "Design", value: "Design" },
+  { label: "Reforma", value: "Reforma" },
+  { label: "Consultoria", value: "Consultoria" },
+  { label: "Outros", value: "Outros" },
 ];
 
 const etapaAtualOptions = [
@@ -42,6 +45,7 @@ const principalDorOptions = [
 
 export function LeadForm() {
   const router = useRouter();
+  const isStaticPreview = process.env.NEXT_PUBLIC_STATIC_PREVIEW === "true";
   const [submitError, setSubmitError] = useState<string | null>(null);
   const { markFormStart, markLeadSubmit, markLeadSuccess, markLeadError } =
     useFormTracking();
@@ -56,7 +60,7 @@ export function LeadForm() {
       nome: "",
       whatsapp: "",
       cidadeUF: "",
-      tipoImovel: "Apto",
+      tipoProjeto: "Software",
       etapaAtual: "Planejando",
       faixaOrcamento: "até 10k",
       principalDor: "Prazo",
@@ -64,6 +68,13 @@ export function LeadForm() {
   });
 
   const onSubmit = async (values: LeadFormData) => {
+    if (isStaticPreview) {
+      markLeadSubmit();
+      markLeadSuccess(values.faixaOrcamento);
+      router.push("/obrigado");
+      return;
+    }
+
     try {
       setSubmitError(null);
       markLeadSubmit();
@@ -111,6 +122,12 @@ export function LeadForm() {
             Leva menos de 1 minuto. A gente só usa seus dados para falar sobre o
             piloto.
           </p>
+          {isStaticPreview ? (
+            <p className="mt-2 text-sm text-amber-700">
+              Modo preview (GitHub Pages): o formulário simula envio e
+              redireciona para a tela de obrigado.
+            </p>
+          ) : null}
 
           <form
             onSubmit={handleSubmit(onSubmit)}
@@ -162,11 +179,11 @@ export function LeadForm() {
             </div>
 
             <div className="space-y-2">
-              <Label htmlFor="tipoImovel">Tipo de imóvel</Label>
+              <Label htmlFor="tipoProjeto">Tipo de projeto</Label>
               <Select
-                id="tipoImovel"
-                options={tipoImovelOptions}
-                {...register("tipoImovel")}
+                id="tipoProjeto"
+                options={tipoProjetoOptions}
+                {...register("tipoProjeto")}
               />
             </div>
 

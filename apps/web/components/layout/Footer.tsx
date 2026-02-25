@@ -3,14 +3,15 @@ export function Footer() {
     <footer className="border-t border-slate-200 bg-white py-10">
       <div className="container flex flex-col gap-4 text-sm text-slate-600 md:flex-row md:items-center md:justify-between">
         <p>
-          © {new Date().getFullYear()} Milestone. Todos os direitos reservados.
+          © {new Date().getFullYear()} Opinião do Dono. Todos os direitos
+          reservados.
         </p>
         <div className="flex flex-wrap gap-4">
           <a
             className="hover:text-brand-cobalt"
-            href="mailto:contato@milestone.app"
+            href="mailto:contato@opiniaododono.com.br"
           >
-            contato@milestone.app
+            contato@opiniaododono.com.br
           </a>
           <a className="hover:text-brand-cobalt" href="#">
             Termos

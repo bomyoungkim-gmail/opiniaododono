@@ -1,8 +1,8 @@
 const stages = [
-  { name: "Demolição", status: "done" },
-  { name: "Hidráulica", status: "progress" },
-  { name: "Revestimento", status: "future" },
-  { name: "Pintura", status: "future" },
+  { name: "Planejamento", status: "done" },
+  { name: "Execução", status: "progress" },
+  { name: "Revisão", status: "future" },
+  { name: "Entrega", status: "future" },
 ] as const;
 
 function statusClass(status: (typeof stages)[number]["status"]) {
@@ -17,7 +17,10 @@ export function StageProgress() {
       <p className="mb-4 text-sm font-semibold text-brand-navy">
         Exemplo de etapas
       </p>
-      <ol className="grid gap-3 md:grid-cols-4" aria-label="Progresso da obra">
+      <ol
+        className="grid gap-3 md:grid-cols-4"
+        aria-label="Progresso do projeto"
+      >
         {stages.map((stage, index) => (
           <li key={stage.name} className="flex items-center gap-3">
             <span
