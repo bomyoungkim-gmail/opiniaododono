@@ -3,26 +3,25 @@ import { Code2, Hammer, Briefcase, Paintbrush } from "lucide-react";
 const personas = [
   {
     icon: Code2,
-    title: "Dono de obra e proprietário",
+    title: "Donos de obra e proprietários",
     description:
-      "Proteja seu capital com pagamentos por marcos validados e evidências reais de execução.",
+      "Tenha controle do investimento com liberações por etapas validadas e evidências claras da obra.",
     color: "text-brand-cobalt",
     bg: "bg-blue-50",
-    large: true,
   },
   {
     icon: Hammer,
     title: "Escritórios de arquitetura",
     description:
-      "Gestão transparente com rastreabilidade financeira para fortalecer reputação e confiança.",
+      "Coordene clientes e fornecedores com rastreabilidade financeira e aprovações formais em cada fase.",
     color: "text-amber-600",
     bg: "bg-amber-50",
   },
   {
     icon: Paintbrush,
-    title: "Lojas e marcenarias",
+    title: "Lojas e marcenarias sob medida",
     description:
-      "Receba por etapas comprovadas, com menor atrito e mais previsibilidade de recebimento.",
+      "Receba por entregas comprovadas, com menos atrito comercial e maior previsibilidade de caixa.",
     color: "text-purple-600",
     bg: "bg-purple-50",
   },
@@ -30,7 +29,7 @@ const personas = [
     icon: Briefcase,
     title: "Construtoras e fornecedores",
     description:
-      "Fluxo financeiro claro, prestação de contas e histórico de performance por projeto.",
+      "Mantenha fluxo financeiro claro, prestação de contas contínua e histórico de performance por projeto.",
     color: "text-brand-emerald",
     bg: "bg-emerald-50",
   },
@@ -48,15 +47,13 @@ export function ForWhom() {
         </h2>
 
         {/* Bento grid — 2025 trend */}
-        <div className="mt-8 grid auto-rows-[minmax(160px,auto)] grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {personas.map((p) => {
             const Icon = p.icon;
             return (
               <article
                 key={p.title}
-                className={`group flex cursor-default flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 transition-transform duration-200 hover:-translate-y-1 hover:shadow-lg ${
-                  p.large ? "sm:col-span-2 lg:col-span-2" : ""
-                }`}
+                className="group flex min-h-[220px] cursor-default flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 transition-transform duration-200 hover:-translate-y-1 hover:shadow-lg"
               >
                 <div
                   className={`flex h-10 w-10 items-center justify-center rounded-xl ${p.bg}`}
@@ -64,7 +61,9 @@ export function ForWhom() {
                   <Icon className={`h-5 w-5 ${p.color}`} aria-hidden="true" />
                 </div>
                 <div className="mt-4">
-                  <h3 className="font-semibold text-brand-navy">{p.title}</h3>
+                  <h3 className="min-h-[3.5rem] [text-wrap:balance] font-semibold leading-snug text-brand-navy">
+                    {p.title}
+                  </h3>
                   <p className="mt-1 text-sm leading-relaxed text-slate-600">
                     {p.description}
                   </p>

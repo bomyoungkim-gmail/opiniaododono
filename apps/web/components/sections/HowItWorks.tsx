@@ -41,14 +41,14 @@ export function HowItWorks() {
           Como funciona
         </h2>
 
-        {/* Bento connected step cards — 2025 trend */}
+        {/* Step cards */}
         <div className="mt-8 grid grid-cols-1 gap-px overflow-hidden rounded-2xl border border-slate-200 bg-slate-200 md:grid-cols-3">
           {steps.map((step) => {
             const Icon = step.icon;
             return (
               <article
                 key={step.title}
-                className={`group flex flex-col gap-4 border-t-4 bg-white p-6 transition-shadow duration-200 hover:shadow-lg ${step.accentBorder}`}
+                className={`group flex min-h-[220px] flex-col gap-4 border-t-4 bg-white p-6 transition-shadow duration-200 hover:shadow-lg ${step.accentBorder}`}
               >
                 <div className="flex items-center justify-between">
                   <span
@@ -61,7 +61,7 @@ export function HowItWorks() {
                     aria-hidden="true"
                   />
                 </div>
-                <h3 className="text-lg font-semibold text-brand-navy">
+                <h3 className="min-h-[3.5rem] [text-wrap:balance] text-lg font-semibold leading-snug text-brand-navy">
                   {step.title}
                 </h3>
                 <p className="text-sm leading-relaxed text-slate-600">

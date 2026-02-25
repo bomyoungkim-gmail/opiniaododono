@@ -36,14 +36,14 @@ export function PilotGuarantees() {
           simples, objetivo e auditável.
         </p>
 
-        {/* Glassmorphism cards on dark — 2025 trend */}
+        {/* Guarantee cards */}
         <div className="mt-8 grid gap-4 md:grid-cols-3">
           {guarantees.map((item) => {
             const Icon = item.icon;
             return (
               <article
                 key={item.title}
-                className="rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-sm transition-colors duration-200 hover:bg-white/10"
+                className="flex min-h-[220px] flex-col rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-sm transition-colors duration-200 hover:bg-white/10"
               >
                 <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-white/10">
                   <Icon
@@ -51,7 +51,7 @@ export function PilotGuarantees() {
                     aria-hidden="true"
                   />
                 </div>
-                <h3 className="mt-4 text-base font-semibold text-white">
+                <h3 className="mt-4 min-h-[3.5rem] [text-wrap:balance] text-base font-semibold leading-snug text-white">
                   {item.title}
                 </h3>
                 <p className="mt-2 text-sm leading-relaxed text-slate-400">
