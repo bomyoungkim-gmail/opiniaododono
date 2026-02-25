@@ -12,8 +12,8 @@ export function HeroIllustration() {
         </span>
       </div>
 
-      {/* Flow */}
-      <div className="grid grid-cols-3 divide-x divide-slate-100 px-0">
+      {/* Flow — stacks vertically on mobile, 3-col on sm+ */}
+      <div className="grid grid-cols-1 divide-y divide-slate-100 px-0 sm:grid-cols-3 sm:divide-x sm:divide-y-0">
         {/* Client */}
         <div className="flex flex-col items-center gap-2 px-3 py-5 text-center">
           <div className="flex h-10 w-10 items-center justify-center rounded-full bg-blue-50">
@@ -42,6 +42,7 @@ export function HeroIllustration() {
         {/* Platform / escrow */}
         <div className="relative flex flex-col items-center gap-2 bg-brand-navy/[0.03] px-3 py-5 text-center">
           <div className="flex h-10 w-10 items-center justify-center rounded-full bg-brand-navy shadow-sm">
+            {" "}
             <svg
               width="18"
               height="18"
@@ -66,11 +67,11 @@ export function HeroIllustration() {
           <p className="text-[10px] leading-snug text-slate-500">
             Retém o valor com segurança
           </p>
-          {/* Arrows */}
-          <span className="absolute -left-2.5 top-1/2 -translate-y-1/2 text-slate-300 text-lg">
+          {/* Arrows — only visible on sm+ 3-col layout */}
+          <span className="absolute -left-2.5 top-1/2 hidden -translate-y-1/2 text-lg text-slate-300 sm:inline">
             →
           </span>
-          <span className="absolute -right-2.5 top-1/2 -translate-y-1/2 text-slate-300 text-lg">
+          <span className="absolute -right-2.5 top-1/2 hidden -translate-y-1/2 text-lg text-slate-300 sm:inline">
             →
           </span>
         </div>

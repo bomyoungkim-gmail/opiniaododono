@@ -23,32 +23,38 @@ const guarantees = [
 
 export function PilotGuarantees() {
   return (
-    <section className="bg-white py-16 md:py-24">
+    <section className="bg-brand-navy py-16 md:py-24">
       <div className="container">
-        <h2 className="text-2xl font-semibold text-brand-navy md:text-3xl">
-          Garantias do Piloto
+        <p className="text-sm font-semibold uppercase tracking-wide text-brand-emerald">
+          Piloto
+        </p>
+        <h2 className="mt-2 text-2xl font-semibold text-white md:text-3xl">
+          Garantias que você pode exigir
         </h2>
-        <p className="mt-3 max-w-2xl text-slate-600">
+        <p className="mt-3 max-w-2xl text-slate-400">
           Feito para a realidade de prestação de serviços no Brasil: simples,
           objetivo e útil.
         </p>
 
-        <div className="mt-8 grid gap-6 md:grid-cols-3">
+        {/* Glassmorphism cards on dark — 2025 trend */}
+        <div className="mt-8 grid gap-4 md:grid-cols-3">
           {guarantees.map((item) => {
             const Icon = item.icon;
             return (
               <article
                 key={item.title}
-                className="rounded-card border border-slate-200 bg-brand-card p-6 shadow-card"
+                className="rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-sm transition-colors duration-200 hover:bg-white/10"
               >
-                <Icon
-                  className="h-5 w-5 text-brand-cobalt"
-                  aria-hidden="true"
-                />
-                <h3 className="mt-4 text-lg font-semibold text-brand-navy">
+                <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-white/10">
+                  <Icon
+                    className="h-5 w-5 text-brand-emerald"
+                    aria-hidden="true"
+                  />
+                </div>
+                <h3 className="mt-4 text-base font-semibold text-white">
                   {item.title}
                 </h3>
-                <p className="mt-2 text-sm text-slate-600">
+                <p className="mt-2 text-sm leading-relaxed text-slate-400">
                   {item.description}
                 </p>
               </article>

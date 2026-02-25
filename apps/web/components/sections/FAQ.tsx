@@ -44,8 +44,11 @@ export function FAQ() {
   return (
     <section id="faq" className="bg-white py-16 md:py-24">
       <div className="container max-w-4xl">
-        <h2 className="text-2xl font-semibold text-brand-navy md:text-3xl">
-          FAQ
+        <p className="text-sm font-semibold uppercase tracking-wide text-brand-cobalt">
+          Dúvidas
+        </p>
+        <h2 className="mt-2 text-2xl font-semibold text-brand-navy md:text-3xl">
+          Perguntas frequentes
         </h2>
         <Accordion type="single" collapsible className="mt-8 w-full">
           {faqItems.map((item, index) => (

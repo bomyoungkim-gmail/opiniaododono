@@ -105,7 +105,28 @@ export function LeadForm() {
   return (
     <section id="formulario" className="bg-blue-50 py-16 md:py-24">
       <div className="container max-w-3xl">
-        <div className="mb-6 rounded-card border border-blue-200 bg-white p-5 text-center shadow-sm">
+        {/* Urgency badge — 2025 trend */}
+        <div className="mb-4 flex items-center justify-center gap-2 rounded-xl border border-amber-200 bg-amber-50 px-4 py-3 text-sm font-medium text-amber-800">
+          <svg
+            width="16"
+            height="16"
+            viewBox="0 0 24 24"
+            fill="none"
+            aria-hidden="true"
+            className="shrink-0 text-amber-600"
+          >
+            <path
+              d="M12 9v4m0 4h.01M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+          </svg>
+          Vagas limitadas para o piloto. Garanta a sua antes de fecharmos.
+        </div>
+
+        <div className="mb-6 rounded-2xl border border-blue-200 bg-white p-5 text-center shadow-sm">
           <p className="text-sm font-semibold text-brand-cobalt">
             Quero participar do piloto
           </p>
