@@ -2,6 +2,7 @@
 
 import { TrackableButton } from "@/components/shared/TrackableButton";
 import { TrustBadges } from "@/components/shared/TrustBadges";
+import { HeroIllustration } from "@/components/shared/HeroIllustration";
 
 export function Hero() {
   return (
@@ -38,18 +39,7 @@ export function Hero() {
           <TrustBadges />
         </div>
 
-        <div className="rounded-card border border-slate-200 bg-white p-6 shadow-card">
-          <div className="space-y-4">
-            <div className="h-4 w-2/3 rounded bg-slate-200" />
-            <div className="h-4 w-full rounded bg-slate-100" />
-            <div className="h-4 w-5/6 rounded bg-slate-100" />
-            <div className="mt-6 h-24 rounded-xl border border-slate-200 bg-brand-surface" />
-            <div className="h-10 w-36 rounded-xl bg-brand-emerald/20" />
-          </div>
-          <p className="mt-4 text-sm text-slate-500">
-            Visualização de etapas e comprovação do projeto.
-          </p>
-        </div>
+        <HeroIllustration />
       </div>
     </section>
   );

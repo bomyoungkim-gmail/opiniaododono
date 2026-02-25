@@ -2,7 +2,8 @@
 
 import Link from "next/link";
 import { useState } from "react";
-import { Menu, ShieldCheck } from "lucide-react";
+import { Menu } from "lucide-react";
+import { BrandLogo } from "@/components/shared/BrandLogo";
 import { TrackableButton } from "@/components/shared/TrackableButton";
 import { Button } from "@/components/ui/button";
 import { Sheet } from "@/components/ui/sheet";
@@ -19,15 +20,8 @@ export function Header() {
   return (
     <header className="sticky top-0 z-40 border-b border-slate-200 bg-white/80 backdrop-blur-sm">
       <div className="container flex h-16 items-center justify-between">
-        <Link
-          href="/"
-          className="inline-flex items-center gap-2 text-brand-navy"
-        >
-          <ShieldCheck
-            className="h-5 w-5 text-brand-cobalt"
-            aria-hidden="true"
-          />
-          <span className="font-semibold">Opinião do Dono</span>
+        <Link href="/" aria-label="Opinião do Dono — página inicial">
+          <BrandLogo />
         </Link>
 
         <nav
