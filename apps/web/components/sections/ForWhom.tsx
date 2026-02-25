@@ -3,31 +3,34 @@ import { Code2, Hammer, Briefcase, Paintbrush } from "lucide-react";
 const personas = [
   {
     icon: Code2,
-    title: "Desenvolvimento de software",
+    title: "Dono de obra e proprietário",
     description:
-      "Pague por sprints aprovados, não por promessas. Cada entrega é validada antes do pagamento.",
+      "Proteja seu capital com pagamentos por marcos validados e evidências reais de execução.",
     color: "text-brand-cobalt",
     bg: "bg-blue-50",
     large: true,
   },
   {
     icon: Hammer,
-    title: "Reformas e obras",
-    description: "Controle cada etapa antes de liberar o valor ao empreiteiro.",
+    title: "Escritórios de arquitetura",
+    description:
+      "Gestão transparente com rastreabilidade financeira para fortalecer reputação e confiança.",
     color: "text-amber-600",
     bg: "bg-amber-50",
   },
   {
     icon: Paintbrush,
-    title: "Design e criação",
-    description: "Aproveu cada fase do projeto antes de prosseguir.",
+    title: "Lojas e marcenarias",
+    description:
+      "Receba por etapas comprovadas, com menor atrito e mais previsibilidade de recebimento.",
     color: "text-purple-600",
     bg: "bg-purple-50",
   },
   {
     icon: Briefcase,
-    title: "Consultoria e projetos",
-    description: "Marcos mensuráveis com evidências para cada entregue.",
+    title: "Construtoras e fornecedores",
+    description:
+      "Fluxo financeiro claro, prestação de contas e histórico de performance por projeto.",
     color: "text-brand-emerald",
     bg: "bg-emerald-50",
   },
@@ -41,7 +44,7 @@ export function ForWhom() {
           Para quem é
         </p>
         <h2 className="mt-2 text-2xl font-semibold text-brand-navy md:text-3xl">
-          Qualquer pessoa que paga por um serviço
+          Para quem busca governança e transparência
         </h2>
 
         {/* Bento grid — 2025 trend */}

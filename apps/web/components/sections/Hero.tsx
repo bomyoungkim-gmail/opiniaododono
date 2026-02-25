@@ -5,9 +5,9 @@ import { TrustBadges } from "@/components/shared/TrustBadges";
 import { HeroIllustration } from "@/components/shared/HeroIllustration";
 
 const stats = [
-  { value: "R$500k+", label: "em projetos gerenciados" },
-  { value: "100+", label: "projetos no piloto" },
-  { value: "100%", label: "evidências registradas", highlight: true },
+  { value: "R$ 2,5MM+", label: "em capital monitorado" },
+  { value: "100%", label: "pagamentos por milestones" },
+  { value: "RT-Free", label: "foco em transparência", highlight: true },
 ];
 
 export function Hero() {
@@ -18,16 +18,16 @@ export function Hero() {
           {/* Pill badge — 2025 trend */}
           <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-brand-cobalt/25 bg-blue-50 px-3.5 py-1.5 text-xs font-semibold text-brand-cobalt">
             <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-brand-cobalt" />
-            Piloto aberto — vagas limitadas
+            Piloto premium — arquitetura e construção de alto padrão
           </div>
 
           <h1 className="text-3xl font-bold leading-tight text-brand-navy md:text-5xl">
-            Pague por serviços e projetos com segurança — garanta o valor justo.
+            Seu capital protegido em escrow, liberado só com entrega comprovada.
           </h1>
           <p className="mt-5 max-w-xl text-lg text-slate-600">
-            Acompanhe entregas, guarde evidências (notas e fotos) e aprove cada
-            etapa antes de liberar o pagamento. Proteja seu dinheiro e evite
-            dores de cabeça.
+            Substitua acordos informais por trilha de auditoria digital: etapas,
+            evidências, nota fiscal e aprovação em um clique antes de cada
+            desembolso.
           </p>
 
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
@@ -37,7 +37,7 @@ export function Hero() {
               size="lg"
               asChild
             >
-              <a href="#formulario">Entrar na lista de espera</a>
+              <a href="#formulario">Quero entrar no piloto</a>
             </TrackableButton>
             <TrackableButton
               variantName="secondary"
@@ -46,7 +46,7 @@ export function Hero() {
               variant="secondary"
               asChild
             >
-              <a href="#como-funciona">Entender como funciona</a>
+              <a href="#como-funciona">Ver fluxo de custódia</a>
             </TrackableButton>
           </div>
 

@@ -10,11 +10,11 @@ export const leadSchema = z.object({
     .regex(WHATSAPP_REGEX, "Ex: (11) 99999-9999"),
   cidadeUF: z.string().min(3, "Informe cidade e UF. Ex: São Paulo/SP"),
   tipoProjeto: z.enum([
-    "Software",
-    "Design",
-    "Reforma",
-    "Consultoria",
-    "Outros",
+    "Reforma residencial",
+    "Projeto arquitetônico",
+    "Interiores",
+    "Mobiliário sob medida",
+    "Obra completa",
   ]),
   etapaAtual: z.enum([
     "Planejando",
@@ -22,13 +22,13 @@ export const leadSchema = z.object({
     "Começa em até 30 dias",
     "60-90 dias",
   ]),
-  faixaOrcamento: z.enum(["até 10k", "10-30k", "30-80k", "80k+"]),
+  faixaOrcamento: z.enum(["até 100k", "100-300k", "300-800k", "800k+"]),
   principalDor: z.enum([
+    "Falta de transparência",
+    "Risco financeiro",
     "Prazo",
     "Qualidade",
-    "Confiança no profissional",
-    "Orçamento estourando",
-    "Organização",
+    "Custos imprevistos",
   ]),
 });
 

@@ -9,13 +9,13 @@ export const metadata: Metadata = {
   metadataBase: new URL(
     process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000",
   ),
-  title: "Opinião do Dono — Pague por serviços e projetos com segurança",
+  title: "Opinião do Dono — Custódia por milestones para obras e arquitetura",
   description:
-    "Assegure o pagamento de valor justo. Acompanhe entregas, guarde evidências e aprove cada etapa antes de liberar o dinheiro.",
+    "Proteja seu capital com escrow por etapas, evidências verificáveis e trilha de auditoria para obras e projetos de alto padrão.",
   openGraph: {
-    title: "Opinião do Dono — Pague por serviços e projetos com segurança",
+    title: "Opinião do Dono — Custódia por milestones para obras e arquitetura",
     description:
-      "Assegure o pagamento de valor justo. Acompanhe entregas, guarde evidências e aprove cada etapa antes de liberar o dinheiro.",
+      "Proteja seu capital com escrow por etapas, evidências verificáveis e trilha de auditoria para obras e projetos de alto padrão.",
     images: ["/og-image.svg"],
     locale: "pt_BR",
     type: "website",

@@ -3,21 +3,21 @@ import { LockKeyhole, MessageCircleMore, FileClock } from "lucide-react";
 const guarantees = [
   {
     icon: LockKeyhole,
-    title: "Dados criptografados (LGPD)",
+    title: "Custódia e dados protegidos",
     description:
-      "Seus dados ficam protegidos e são usados somente para o piloto.",
+      "Capital segregado por projeto e dados sob padrão de segurança compatível com LGPD.",
   },
   {
     icon: MessageCircleMore,
-    title: "Suporte humanizado via WhatsApp",
+    title: "Suporte consultivo de operação",
     description:
-      "Sem robô enrolando: atendimento direto para dúvidas do seu projeto.",
+      "Atendimento direto para aprovações, divergências e liberação de milestones.",
   },
   {
     icon: FileClock,
-    title: "Registro histórico com validade de evidência",
+    title: "Trilha de auditoria completa",
     description:
-      "Tudo fica registrado por etapa para reduzir conflito e retrabalho.",
+      "Cada evidência, validação e pagamento fica registrado para governança do contrato.",
   },
 ];
 
@@ -29,11 +29,11 @@ export function PilotGuarantees() {
           Piloto
         </p>
         <h2 className="mt-2 text-2xl font-semibold text-white md:text-3xl">
-          Garantias que você pode exigir
+          Garantias que protegem seu investimento
         </h2>
         <p className="mt-3 max-w-2xl text-slate-400">
-          Feito para a realidade de prestação de serviços no Brasil: simples,
-          objetivo e útil.
+          Feito para a realidade de obras e projetos de arquitetura no Brasil:
+          simples, objetivo e auditável.
         </p>
 
         {/* Glassmorphism cards on dark — 2025 trend */}

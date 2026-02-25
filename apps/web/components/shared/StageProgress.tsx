@@ -1,8 +1,8 @@
 const stages = [
-  { name: "Planejamento", status: "done" },
-  { name: "Execução", status: "progress" },
-  { name: "Revisão", status: "future" },
-  { name: "Entrega", status: "future" },
+  { name: "Projeto aprovado", status: "done" },
+  { name: "Obra em execução", status: "progress" },
+  { name: "Vistoria final", status: "future" },
+  { name: "Liberação final", status: "future" },
 ] as const;
 
 function statusClass(status: (typeof stages)[number]["status"]) {

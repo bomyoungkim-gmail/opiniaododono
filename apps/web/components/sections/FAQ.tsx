@@ -8,35 +8,35 @@ import {
 const faqItems = [
   {
     q: "Isso é um banco?",
-    a: "Não. É uma plataforma para organizar etapas, evidências e aprovações de pagamento no seu projeto ou serviço.",
+    a: "Não. Somos uma plataforma de governança de obras e projetos com foco em custódia, evidências e aprovação por milestones.",
   },
   {
     q: "Como o pagamento por etapas funciona?",
-    a: "Você define etapas e valores. O profissional solicita a liberação quando concluir a etapa e envia evidências. Você aprova e segue para a próxima.",
+    a: "Você define os marcos e os valores. O fornecedor envia provas de execução, você aprova e o valor daquela etapa é liberado.",
   },
   {
     q: "Vocês seguram o dinheiro (escrow)?",
-    a: "No MVP, estamos validando demanda e fluxo. A etapa de custódia/conta vinculada pode entrar na próxima fase conforme o piloto.",
+    a: "No MVP validamos o fluxo operacional de custódia. A camada bancária de escrow é ativada por integração conforme o avanço do piloto.",
   },
   {
     q: "O profissional precisa usar também?",
-    a: "Idealmente sim, para enviar evidências e solicitar liberações. Mas você pode começar sozinho organizando etapas e registro.",
+    a: "Sim, para enviar evidências e solicitar liberações. Isso garante que todo desembolso tenha lastro documental.",
   },
   {
     q: "Precisa de nota fiscal?",
-    a: "Depende do acordo e do tipo de serviço. A plataforma permite anexar nota/comprovantes quando fizer sentido.",
+    a: "Sempre que disponível, sim. A plataforma prioriza NF-e e comprovantes para reforçar rastreabilidade e transparência.",
   },
   {
-    q: "Serve para qualquer tipo de serviço?",
-    a: "Sim — desenvolvimento de software, design, consultoria, reformas, obras. Você monta as etapas do seu jeito.",
+    q: "Serve para qual tipo de projeto?",
+    a: "Principalmente reformas, arquitetura, interiores, marcenaria e obra completa, com marcos de entrega claramente definidos.",
   },
   {
     q: "Quanto custa?",
-    a: "Estamos abrindo um piloto com vagas limitadas. Quem entrar na lista recebe condições especiais e participa definindo o produto.",
+    a: "Estamos em piloto com vagas limitadas. Quem entrar agora recebe onboarding prioritário e participa da evolução do produto.",
   },
   {
     q: "Quando vocês começam?",
-    a: "Assim que fecharmos o grupo inicial na sua região. Entrando na lista, você recebe o convite primeiro.",
+    a: "Assim que fecharmos os primeiros grupos de projeto por região. Entrando na lista, você recebe convite prioritário.",
   },
 ];
 

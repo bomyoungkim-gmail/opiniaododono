@@ -42,7 +42,6 @@ export function HeroIllustration() {
         {/* Platform / escrow */}
         <div className="relative flex flex-col items-center gap-2 bg-brand-navy/[0.03] px-3 py-5 text-center">
           <div className="flex h-10 w-10 items-center justify-center rounded-full bg-brand-navy shadow-sm">
-            {" "}
             <svg
               width="18"
               height="18"
@@ -65,7 +64,7 @@ export function HeroIllustration() {
           </div>
           <p className="text-[11px] font-semibold text-slate-700">Plataforma</p>
           <p className="text-[10px] leading-snug text-slate-500">
-            Retém o valor com segurança
+            Custódia ativa até sua aprovação
           </p>
           {/* Arrows — only visible on sm+ 3-col layout */}
           <span className="absolute -left-2.5 top-1/2 hidden -translate-y-1/2 text-lg text-slate-300 sm:inline">
@@ -108,7 +107,7 @@ export function HeroIllustration() {
             Profissional
           </p>
           <p className="text-[10px] leading-snug text-slate-500">
-            Executa etapas e envia evidências
+            Entrega etapa, NF-e e evidências
           </p>
         </div>
       </div>
@@ -121,17 +120,17 @@ export function HeroIllustration() {
         <ol className="space-y-2">
           <StageItem
             status="done"
-            label="Etapa 1 — Planejamento aprovado"
+            label="Etapa 1 — Projeto aprovado"
             value="R$ 1.200"
           />
           <StageItem
             status="active"
-            label="Etapa 2 — Em execução"
+            label="Etapa 2 — Execução validada"
             value="R$ 2.300"
           />
           <StageItem
             status="pending"
-            label="Etapa 3 — Aguardando"
+            label="Etapa 3 — Liberação final"
             value="R$ 1.500"
           />
         </ol>

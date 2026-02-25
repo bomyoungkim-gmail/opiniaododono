@@ -2,11 +2,11 @@ import { CheckCircle2 } from "lucide-react";
 import { StageProgress } from "@/components/shared/StageProgress";
 
 const benefits = [
-  "Pagamento por etapas para reduzir risco e evitar ‘sumiço’ no meio do projeto",
-  "Evidências organizadas (fotos, relatórios e documentos) por etapa",
-  "Histórico claro do que foi combinado, enviado e aprovado",
-  "Menos conflito: tudo registrado, sem ‘disse me disse’",
-  "Mais previsibilidade de prazo e custo (com etapas visíveis)",
+  "Capital protegido em conta de custódia até sua aprovação",
+  "Evidências organizadas por etapa (fotos, NF-e e comprovantes)",
+  "Trilha de auditoria de cada decisão e cada desembolso",
+  "Redução de conflitos com registro objetivo de entrega",
+  "Mais previsibilidade de prazo, custo e qualidade final",
 ];
 
 export function Benefits() {
@@ -18,7 +18,7 @@ export function Benefits() {
             Por quê usar
           </p>
           <h2 className="mt-2 text-2xl font-semibold text-brand-navy md:text-3xl">
-            Benefícios para o seu projeto
+            Benefícios para o dono da obra
           </h2>
           <ul className="mt-6 space-y-4">
             {benefits.map((benefit) => (
@@ -48,8 +48,8 @@ export function Benefits() {
                 Sem essa plataforma
               </p>
               <p className="mt-1 text-sm leading-relaxed text-slate-600">
-                Pagamento único adiantado, sem garantia de entrega, sem
-                registro e sem como cobrar evidências.
+                Pagamento adiantado, pouca visibilidade, risco de RT oculta e
+                baixa rastreabilidade financeira.
               </p>
             </div>
             <div className="bg-emerald-50 px-5 py-4">
@@ -57,8 +57,8 @@ export function Benefits() {
                 Com a Opinião do Dono
               </p>
               <p className="mt-1 text-sm leading-relaxed text-slate-600">
-                Cada etapa aprovada antes do pagamento. Histórico completo.
-                Risco distribuído e transparência total.
+                Milestones validados, pagamento liberado por etapa e histórico
+                completo para governança do projeto.
               </p>
             </div>
           </div>

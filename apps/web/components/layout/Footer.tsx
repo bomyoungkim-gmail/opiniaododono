@@ -22,7 +22,7 @@ export function Footer() {
         </div>
       </div>
       <div className="container mt-4 text-xs text-slate-500">
-        Dados criptografados e usados apenas para o piloto.
+        Dados criptografados e trilha de auditoria ativa durante todo o piloto.
       </div>
     </footer>
   );

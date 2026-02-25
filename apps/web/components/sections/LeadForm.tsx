@@ -14,11 +14,14 @@ import { Label } from "@/components/ui/label";
 import { Select } from "@/components/ui/select";
 
 const tipoProjetoOptions = [
-  { label: "Software", value: "Software" },
-  { label: "Design", value: "Design" },
-  { label: "Reforma", value: "Reforma" },
-  { label: "Consultoria", value: "Consultoria" },
-  { label: "Outros", value: "Outros" },
+  { label: "Reforma residencial", value: "Reforma residencial" },
+  {
+    label: "Projeto arquitetônico",
+    value: "Projeto arquitetônico",
+  },
+  { label: "Interiores", value: "Interiores" },
+  { label: "Mobiliário sob medida", value: "Mobiliário sob medida" },
+  { label: "Obra completa", value: "Obra completa" },
 ];
 
 const etapaAtualOptions = [
@@ -29,18 +32,18 @@ const etapaAtualOptions = [
 ];
 
 const faixaOrcamentoOptions = [
-  { label: "até 10k", value: "até 10k" },
-  { label: "10-30k", value: "10-30k" },
-  { label: "30-80k", value: "30-80k" },
-  { label: "80k+", value: "80k+" },
+  { label: "até 100k", value: "até 100k" },
+  { label: "100-300k", value: "100-300k" },
+  { label: "300-800k", value: "300-800k" },
+  { label: "800k+", value: "800k+" },
 ];
 
 const principalDorOptions = [
+  { label: "Falta de transparência", value: "Falta de transparência" },
+  { label: "Risco financeiro", value: "Risco financeiro" },
   { label: "Prazo", value: "Prazo" },
   { label: "Qualidade", value: "Qualidade" },
-  { label: "Confiança no profissional", value: "Confiança no profissional" },
-  { label: "Orçamento estourando", value: "Orçamento estourando" },
-  { label: "Organização", value: "Organização" },
+  { label: "Custos imprevistos", value: "Custos imprevistos" },
 ];
 
 export function LeadForm() {
@@ -60,10 +63,10 @@ export function LeadForm() {
       nome: "",
       whatsapp: "",
       cidadeUF: "",
-      tipoProjeto: "Software",
+      tipoProjeto: "Reforma residencial",
       etapaAtual: "Planejando",
-      faixaOrcamento: "até 10k",
-      principalDor: "Prazo",
+      faixaOrcamento: "até 100k",
+      principalDor: "Falta de transparência",
     },
   });
 
@@ -140,8 +143,8 @@ export function LeadForm() {
             Entre na lista de espera
           </h2>
           <p className="mt-2 text-slate-600">
-            Leva menos de 1 minuto. A gente só usa seus dados para falar sobre o
-            piloto.
+            Leva menos de 1 minuto. Usamos seus dados apenas para contato sobre
+            piloto e onboarding de custódia.
           </p>
           {isStaticPreview ? (
             <p className="mt-2 text-sm text-amber-700">

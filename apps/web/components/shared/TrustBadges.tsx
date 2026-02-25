@@ -1,10 +1,10 @@
 import { Camera, DollarSign, ShieldCheck, Clock3 } from "lucide-react";
 
 const badges = [
-  { icon: DollarSign, label: "por etapas" },
-  { icon: Camera, label: "com evidências" },
-  { icon: ShieldCheck, label: "aprovação" },
-  { icon: Clock3, label: "controle de prazo" },
+  { icon: DollarSign, label: "escrow por etapas" },
+  { icon: Camera, label: "evidências de execução" },
+  { icon: ShieldCheck, label: "trilha auditável" },
+  { icon: Clock3, label: "governança de prazo" },
 ];
 
 export function TrustBadges() {

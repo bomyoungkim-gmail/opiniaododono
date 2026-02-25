@@ -1,9 +1,9 @@
 export type TipoProjeto =
-  | "Software"
-  | "Design"
-  | "Reforma"
-  | "Consultoria"
-  | "Outros";
+  | "Reforma residencial"
+  | "Projeto arquitetônico"
+  | "Interiores"
+  | "Mobiliário sob medida"
+  | "Obra completa";
 
 export type EtapaAtual =
   | "Planejando"
@@ -11,14 +11,14 @@ export type EtapaAtual =
   | "Começa em até 30 dias"
   | "60-90 dias";
 
-export type FaixaOrcamento = "até 10k" | "10-30k" | "30-80k" | "80k+";
+export type FaixaOrcamento = "até 100k" | "100-300k" | "300-800k" | "800k+";
 
 export type PrincipalDor =
+  | "Falta de transparência"
+  | "Risco financeiro"
   | "Prazo"
   | "Qualidade"
-  | "Confiança no profissional"
-  | "Orçamento estourando"
-  | "Organização";
+  | "Custos imprevistos";
 
 export interface LeadPayload {
   nome: string;

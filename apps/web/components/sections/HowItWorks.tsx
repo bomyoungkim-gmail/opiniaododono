@@ -4,27 +4,27 @@ const steps = [
   {
     icon: ClipboardList,
     step: "01",
-    title: "Você define as etapas",
+    title: "Você aporta na conta protegida",
     description:
-      "Combine marcos simples do projeto ou serviço e defina os valores por etapa.",
+      "Defina milestones e valores por etapa. O capital fica segregado para o seu projeto.",
     accentBorder: "border-t-brand-cobalt",
     badgeClass: "bg-blue-50 text-brand-cobalt",
   },
   {
     icon: Camera,
     step: "02",
-    title: "O profissional envia evidências",
+    title: "Fornecedor envia provas de entrega",
     description:
-      "Fotos do antes/depois, relatórios e notas/comprovantes quando necessário.",
+      "Fotos da etapa concluída, documentos e NF-e para validação da execução.",
     accentBorder: "border-t-amber-400",
     badgeClass: "bg-amber-50 text-amber-700",
   },
   {
     icon: CheckCircle2,
     step: "03",
-    title: "Você aprova e libera",
+    title: "Você aprova e libera o pagamento",
     description:
-      "O projeto avança com previsibilidade e registro claro do que foi entregue.",
+      "A cada aprovação, o desembolso é executado com trilha de auditoria completa.",
     accentBorder: "border-t-brand-emerald",
     badgeClass: "bg-emerald-50 text-emerald-700",
   },
