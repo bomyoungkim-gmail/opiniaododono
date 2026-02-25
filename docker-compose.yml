@@ -1,0 +1,33 @@
+name: milestone
+
+services:
+  web:
+    build:
+      context: ./apps/web
+      dockerfile: Dockerfile
+      target: dev
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./apps/web:/app
+      - web_node_modules:/app/node_modules
+      - web_next_cache:/app/.next
+      - ./data:/data
+      - ./.claude:/workspace/.claude:ro
+      - ./.github:/workspace/.github:ro
+      - ./.codex:/workspace/.codex:ro
+      - ./.agent:/workspace/.agent:ro
+    environment:
+      NEXT_TELEMETRY_DISABLED: "1"
+      LEADS_FILE: /data/leads.jsonl
+      CI: "1"
+      PNPM_CONFIG_CONFIRM_MODULES_PURGE: "false"
+    env_file:
+      - path: ./apps/web/.env.local
+        required: false
+    restart: unless-stopped
+    command: sh -c "pnpm install --no-frozen-lockfile && pnpm dev -H 0.0.0.0 -p 3000"
+
+volumes:
+  web_node_modules:
+  web_next_cache:
